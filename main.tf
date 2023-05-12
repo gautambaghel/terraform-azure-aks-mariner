@@ -19,22 +19,17 @@ resource "azurerm_kubernetes_cluster" "default" {
 
   default_node_pool {
     name            = "default"
-    node_count      = 1
+    node_count      = 3
     vm_size         = "Standard_D2_v2"
     os_sku          = "Mariner"
     os_disk_size_gb = 50
   }
 
-#   service_principal {
-#     client_id     = var.appId
-#     client_secret = var.password
-#   }
-
   identity {
     type = "SystemAssigned"
   }
 
-#   role_based_access_control_enabled = true
+  role_based_access_control_enabled = true
 
   tags = {
     name = "alliances-aks-${random_string.suffix.result}"
