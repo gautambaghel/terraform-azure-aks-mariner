@@ -5,13 +5,11 @@ variable "region" {
 
 variable "appId" {
   description = "Azure Kubernetes Service Cluster service principal"
-  type = "string"
   default = ""
 }
 
 variable "password" {
   description = "Azure Kubernetes Service Cluster password"
-  type = "string"
   default = ""
 }
 
