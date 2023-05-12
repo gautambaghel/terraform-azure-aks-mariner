@@ -11,3 +11,5 @@ $ terraform init -upgrade
 $ terraform apply -auto-approve
 $ az aks get-credentials --resource-group $(terraform output -raw resource_group_name) --name $(terraform output -raw kubernetes_cluster_name)
 ```
+
+### If you're using Terraform Cloud to deploy this, please follow the Dynamic Credentials tutorial for [more information here](https://developer.hashicorp.com/terraform/tutorials/cloud/dynamic-credentials)
