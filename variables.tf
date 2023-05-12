@@ -5,10 +5,14 @@ variable "region" {
 
 variable "appId" {
   description = "Azure Kubernetes Service Cluster service principal"
+  type = "string"
+  default = ""
 }
 
 variable "password" {
   description = "Azure Kubernetes Service Cluster password"
+  type = "string"
+  default = ""
 }
 
 variable "kubernetes_version" {
@@ -18,16 +22,16 @@ variable "kubernetes_version" {
 }
 
 variable "aks_os_sku" {
-  description = "Kubernetes version for the AKS cluster"
+  description = "AKS Operating System SKUs"
   type        = string
 }
 
 variable "aks_node_count" {
-  description = "Kubernetes version for the AKS cluster"
+  description = "Number of nodes for the AKS cluster"
   type        = string
 }
 
 variable "aks_confidential_computing_enabled" {
-  description = "Kubernetes version for the AKS cluster"
+  description = "Enable Confidential computing"
   type        = bool
 }
