@@ -20,17 +20,14 @@ variable "kubernetes_version" {
 variable "aks_os_sku" {
   description = "Kubernetes version for the AKS cluster"
   type        = string
-  default     = "Mariner"
 }
 
 variable "aks_node_count" {
   description = "Kubernetes version for the AKS cluster"
   type        = string
-  default     = "3"
 }
 
 variable "aks_confidential_computing_enabled" {
   description = "Kubernetes version for the AKS cluster"
   type        = bool
-  default     = true
 }
