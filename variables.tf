@@ -1,16 +1,19 @@
 variable "region" {
-  default     = "West US 2"
   description = "Azure region to deploy the resources"
+  type        = string
+  default     = "West US 2"
 }
 
 variable "appId" {
   description = "Azure Kubernetes Service Cluster service principal"
-  default = ""
+  type        = string
+  default     = ""
 }
 
 variable "password" {
   description = "Azure Kubernetes Service Cluster password"
-  default = ""
+  default     = ""
+  type        = string
 }
 
 variable "kubernetes_version" {
