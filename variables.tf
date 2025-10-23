@@ -29,7 +29,7 @@ variable "aks_os_sku" {
 
 variable "aks_node_count" {
   description = "Number of nodes for the AKS cluster"
-  type        = string
+  type        = number
 }
 
 variable "aks_confidential_computing_enabled" {
